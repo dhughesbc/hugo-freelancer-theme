@@ -25,7 +25,7 @@ Inside the folder of your Hugo site run:
 
     $ mkdir themes
     $ cd themes
-    $ git clone https://github.com/digitalcraftsman/hugo-freelancer-theme
+    $ git clone https://github.com/dhughesbc/hugo-freelancer-theme
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -37,21 +37,23 @@ After installing the Freelancer Theme successfully it requires a just a few more
 
 ### The config file
 
-Take a look inside the [`exampleSite`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/config.toml).
+Take a look inside the [`exampleSite`](//github.com/dhughesbc/hugo-freelancer-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/dhughesbc/hugo-freelancer-theme/blob/master/exampleSite/config.toml).
 It contains detailed information about the setup of the contact form ([or see below](#make-the-contact-form-working)) and the customization of all strings in this theme. 
 
-To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like.
+To use it, copy the [`config.toml`](//github.com/dhughesbc/hugo-freelancer-theme/blob/master/exampleSite/config.toml) into the root folder of your Hugo site. Feel free to change strings as you like.
 
 
 ### Make the contact form working
 
 Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
 
-1. Enter your email address under 'email' in the [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/config.toml)
-2. Upload the generated site to your server
-3. Send a dummy email yourself to confirm your account
-4. Click the confirm link in the email from [formspree.io](//formspree.io/)
-5. You're done. Happy mailing!
+1. Copy the [`contact-thank-you.md`](//github.com/dhughesbc/hugo-freelancer-theme/blob/master/exampleSite/content/contact-thank-you.md) file into the content folder of your Hugo site. This needs to exist to build the page that users are redirected to 
+after submitting the form to [formspree.io](//formspree.io/). The contents of this file are not used for anything.
+2. Enter your email address under 'email' in the [`config.toml`](//github.com/dhughesbc/hugo-freelancer-theme/blob/master/exampleSite/config.toml)
+3. Upload the generated site to your server
+4. Send a dummy email yourself to confirm your account
+5. Click the confirm link in the email from [formspree.io](//formspree.io/)
+6. You're done. Happy mailing!
 
 
 ### Add social networks
@@ -68,7 +70,7 @@ The variable 'icon' represents the shown icon of the social network. It's a CSS 
 
 ### Create your portfolio
 
-Beside the config file, there is in `data` another subfolder called [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/data/projects) which hosts the files that will appear as your projects in the portfolio section. Such a project file might look like [this one](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/data/projects/2014-07-13-project-1.yaml) written in YAML:
+Beside the config file, there is in `data` another subfolder called [`projects`](//github.com/dhughesbc/hugo-freelancer-theme/tree/master/exampleSite/data/projects) which hosts the files that will appear as your projects in the portfolio section. Such a project file might look like [this one](//github.com/dhughesbc/hugo-freelancer-theme/blob/master/exampleSite/data/projects/2014-07-13-project-1.yaml) written in YAML:
 
 ```yaml
 modalID: 1
@@ -81,7 +83,7 @@ category: Web Development
 description: Use this area of the page to describe your project. The icon above is part of a free icon set by [Flat Icons](//sellfy.com/p/8Q9P/jV3VZ/"). On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
 ```
 
-Copy the folder [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/data/projects) inside the `data` folder in the **root** directory of your site. Let's make some changes to show your work.
+Copy the folder [`projects`](//github.com/dhughesbc/hugo-freelancer-theme/tree/master/exampleSite/data/projects) inside the `data` folder in the **root** directory of your site. Let's make some changes to show your work.
 
 Pay attention to the `modalID`. It must be a unique integer and be incremented with each new project you want to add to the portfolio. Otherwise, the corresponding modal can't be rendered.
 
@@ -99,12 +101,12 @@ Now enter `localhost:1313` in the address bar of your browser.
 
 ## Contributing
 
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/digitalcraftsman/hugo-freelancer-theme/issues) to let me know. Or make directly a [pull request](//github.com/digitalcraftsman/hugo-freelancer-theme/pulls).
+Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/dhughesbc/hugo-freelancer-theme/issues) to let me know. Or make directly a [pull request](//github.com/dhughesbc/hugo-freelancer-theme/pulls).
 
 
 ## License
 
-This theme is released under the Apache License 2.0 For more information read the [License](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/LICENSE).
+This theme is released under the Apache License 2.0 For more information read the [License](//github.com/dhughesbc/hugo-freelancer-theme/blob/master/LICENSE).
 
 
 ## Annotations

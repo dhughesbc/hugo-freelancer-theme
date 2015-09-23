@@ -67,8 +67,7 @@ theme = "hugo-freelancer-theme"
 
     [params.contact]
         title = "Contact"
-        # /contact-thank-you is the built-in thank page
-        redirectUrl = "http://my-awesome-site.com/contact-thank-you"
+        # This will be the subject of the email that gets sent
         subject = "message from my-awesome-site.com contact form"
 
         # 'error' defines error messages for invalid inputs
