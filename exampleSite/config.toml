@@ -67,6 +67,9 @@ theme = "hugo-freelancer-theme"
 
     [params.contact]
         title = "Contact"
+        # /contact-thank-you is the built-in thank page
+        redirectUrl = "http://my-awesome-site.com/contact-thank-you"
+        subject = "message from my-awesome-site.com contact form"
 
         # 'error' defines error messages for invalid inputs
         [params.contact.form.name]
@@ -87,6 +90,10 @@ theme = "hugo-freelancer-theme"
 
         [params.contact.form.button]
             text = "Send"
+
+    [params.contact_thank_you]
+        title = "Thank You"
+        text = "Thank you for you message. We will respond as soon as possible!"
 
 
     [params.footer]
@@ -111,6 +118,8 @@ theme = "hugo-freelancer-theme"
                 link=  "//stackoverflow.com/questions/tagged/hugo"
 
 
-        [params.footer.credits]
-            title = "About Freelancer"
-            text = "Freelance is a free to use, open source Bootstrap theme created by [Start Bootstrap](//startbootstrap.com)."
+        [params.footer.phone]
+            title = "Phone"
+            # Displays a "Call now" phone link on mobile devices only
+            mobileLink = "tel:+1234567890"
+            text = "(123) 456-7890"
