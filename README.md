@@ -75,19 +75,16 @@ Beside the config file, there is in `data` another subfolder called [`projects`]
 ```yaml
 modalID: 1
 title: Project Cabin
-date: 2014-07-13
 img: cabin.png
-client: Start Bootstrap
-clientLink: "#"
-category: Web Development
+clientLink: "http://an-awesome-site-i-built.com"
 description: Use this area of the page to describe your project. The icon above is part of a free icon set by [Flat Icons](//sellfy.com/p/8Q9P/jV3VZ/"). On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
 ```
 
-Copy the folder [`projects`](//github.com/dhughesbc/hugo-freelancer-theme/tree/master/exampleSite/data/projects) inside the `data` folder in the **root** directory of your site. Let's make some changes to show your work.
+Copy the folder [`projects`](//github.com/dhughesbc/hugo-freelancer-theme/tree/master/exampleSite/data/projects) inside the `data` folder into the **root** directory of your site. Let's make some changes to show your work.
 
 Pay attention to the `modalID`. It must be a unique integer and be incremented with each new project you want to add to the portfolio. Otherwise, the corresponding modal can't be rendered.
 
-Furthermore, you can use Markdown syntax for URLs like here `[text](//url.to/source)` in the description. Copy the image of an project inside `static/img/portfolio` and **just** enter the filename.
+Furthermore, you can use Markdown syntax for URLs like here `[text](//url.to/source)` in the description. Copy the image of a project into `static/img/portfolio` and **just** enter the filename.
 
 
 ### Nearly finished
